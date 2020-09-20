@@ -1,4 +1,8 @@
-# ExoticGarden
+# TwerkingGarden
+
+TwerkingGarden is a custom addon for Void Realms which allows players to twerk (sneak) on ExoticGarden plants to make them grow.
+
+##About ExoticGarden
 
 ExoticGarden is a big addon to [Slimefun 4](https://github.com/TheBusyBiscuit/Slimefun4) which brings various new Plants, fruits, vegetables and food items to the game.
 

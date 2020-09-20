@@ -5,5 +5,8 @@ world-blacklist:
 chances:
   TREE: 22
   BUSH: 16
+twerking:
+  radius: 3
+  chance: 0.5
 options:
   auto-update: true

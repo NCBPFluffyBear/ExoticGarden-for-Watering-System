@@ -1,9 +1,9 @@
-name: ExoticGarden
+name: TwerkingGarden
 version: ${project.version}
-author: The Slimefun 4 Community
+author: NCBPFluffyBear (Original by TheBusyBiscuit)
 description: A Slimefun Addon that adds new Plants and dishes to the game
 api-version: '1.13'
 
-main: io.github.thebusybiscuit.exoticgarden.ExoticGarden
+main: me.fluffybear.twerkinggarden.TwerkingGarden
 
 depend: [Slimefun]
