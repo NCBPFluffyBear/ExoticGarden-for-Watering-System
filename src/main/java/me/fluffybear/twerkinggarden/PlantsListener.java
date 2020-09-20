@@ -11,6 +11,7 @@ import org.bukkit.Effect;
 import org.bukkit.GameMode;
 import org.bukkit.Location;
 import org.bukkit.Material;
+import org.bukkit.Particle;
 import org.bukkit.Tag;
 import org.bukkit.World;
 import org.bukkit.block.Block;
@@ -224,17 +225,21 @@ public class PlantsListener implements Listener {
 
         if (item != null) {
             final double random = ThreadLocalRandom.current().nextDouble();
-            if (cfg.getDouble("twerking.chance") >= random) {
                 for (Tree tree : TwerkingGarden.getTrees()) {
                     if (item.getID().equalsIgnoreCase(tree.getSapling())) {
-                        BlockStorage.clearBlockInfo(l);
-                        Schematic.pasteSchematic(l, tree);
-                        return;
+                        l.getWorld().spawnParticle(Particle.VILLAGER_HAPPY, l.add(0.5D, 0.5D, 0.5D), 15, 0.2F, 0.2F, 0.2F);
+                        if (cfg.getDouble("twerking.chance") >= random) {
+                            BlockStorage.clearBlockInfo(l.getBlock());
+                            Schematic.pasteSchematic(l, tree);
+                            return;
+                        }
                     }
                 }
 
-                for (Berry berry : TwerkingGarden.getBerries()) {
-                    if (item.getID().equalsIgnoreCase(berry.toBush())) {
+            for (Berry berry : TwerkingGarden.getBerries()) {
+                if (item.getID().equalsIgnoreCase(berry.toBush())) {
+                    l.getWorld().spawnParticle(Particle.VILLAGER_HAPPY, l.add(0.5D, 0.5D, 0.5D), 15, 0.2F, 0.2F, 0.2F);
+                    if (cfg.getDouble("twerking.chance") >= random) {
                         switch (berry.getType()) {
                             case BUSH:
                                 l.getBlock().setType(Material.OAK_LEAVES);

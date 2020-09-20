@@ -7,6 +7,6 @@ chances:
   BUSH: 16
 twerking:
   radius: 3
-  chance: 0.5
+  chance: 0.1
 options:
   auto-update: true
