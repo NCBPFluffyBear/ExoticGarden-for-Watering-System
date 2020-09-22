@@ -4,7 +4,7 @@
 
     <modelVersion>4.0.0</modelVersion>
     <groupId>me.ncbpfluffybear</groupId>
-    <artifactId>TwerkingGarden</artifactId>
+    <artifactId>ExoticGardenWateringCan</artifactId>
     <version>1.0.0</version>
 
     <properties>
@@ -97,6 +97,12 @@
                     <artifactId>bstats-bukkit</artifactId>
                 </exclusion>
             </exclusions>
+        </dependency>
+
+        <dependency>
+            <groupId>com.github.NCBPFluffyBear</groupId>
+            <artifactId>FluffyMachines</artifactId>
+            <version>bc4bc76e97</version>
         </dependency>
     </dependencies>
 </project>

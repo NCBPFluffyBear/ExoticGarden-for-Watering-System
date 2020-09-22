@@ -1,9 +1,9 @@
-name: TwerkingGarden
+name: ExoticGardenWateringCan
 version: ${project.version}
 author: NCBPFluffyBear (Original by TheBusyBiscuit)
 description: A Slimefun Addon that adds new Plants and dishes to the game
 api-version: '1.13'
 
-main: me.fluffybear.twerkinggarden.TwerkingGarden
+main: me.fluffybear.exoticgardenwateringcan.ExoticGardenWateringCan
 
 depend: [Slimefun]
